@@ -36,6 +36,15 @@ a {
     color: black;
 }
 
+.fa-bars {
+    background-color: #1259c3;
+    color: #ebebeb;
+    padding: 8px;
+    margin-bottom: 15px;
+    margin-left: 45%;
+    border-radius: 5px;
+}
+
 /******************** MAIN ********************/
 
 main img {
