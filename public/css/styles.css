@@ -1,5 +1,12 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
 }
 
 /******************** HEADER ********************/
@@ -7,6 +14,7 @@ body {
 header {
     background-color: #EAC926;
     font-size: 12px;
+    width: 100vw;
 }
 
 .logo {
@@ -45,10 +53,41 @@ a {
     border-radius: 5px;
 }
 
+.navbar, .loginbar {
+    display: none;
+}
+
 /******************** MAIN ********************/
 
+main {
+    width: 90%;
+    margin: auto;
+}
+
+main article {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
 main img {
-    width: 200px;
+    width: 100%;
+}
+
+.container {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    width: 100%;
+    background-color: white;
+}
+
+main .fa-solid {
+    color: limegreen;
+    border: 1px solid limegreen;
+    border-radius: 25px;
+    padding-top: 5px;
+    padding-left: 5px;
+    width: 40px;
+    height: 40px;
 }
 
 h3 {
@@ -57,10 +96,22 @@ h3 {
 
 .precios {
     font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-.descuentos, .descripciones {
+.descuentos {
+    color: limegreen;
+}
+
+.descripciones {
+    display: none;
+}
+
+.descuentos,
+.descripciones {
     font-size: 16px;
+    margin-top: 0px;
 }
 
 /******************** FOOTER ********************/
@@ -92,4 +143,40 @@ footer p {
 .copyright {
     text-align: left;
     padding: 30px 0px 10px 20px;
+}
+
+@media (min-width: 361px) {
+    .navbar, .loginbar {
+        display: block;
+    }
+
+    header .fa-solid {
+        display: none;
+    }
+
+    main .descripciones {
+        display: block;
+    }
+
+    main article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar, .loginbar {
+        display: block;
+    }
+
+    header .fa-solid {
+        display: none;
+    }
+
+    .descripciones {
+        display: block;
+    }
+
+    main article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 }
