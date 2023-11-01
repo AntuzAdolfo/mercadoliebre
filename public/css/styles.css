@@ -15,10 +15,12 @@ header {
     background-color: #EAC926;
     font-size: 12px;
     width: 100vw;
+    height: 100%;
+    padding-bottom: 10px;
 }
 
 .logo {
-    width: 35%;
+    width: 35vw;
     margin: 30px 0 0 30px;
 }
 
@@ -44,17 +46,27 @@ a {
     color: black;
 }
 
-.fa-bars {
+.hamburguer {
+    display: block;
     background-color: #1259c3;
     color: #ebebeb;
-    padding: 8px;
-    margin-bottom: 15px;
-    margin-left: 45%;
-    border-radius: 5px;
+    max-width: 40px;
+    font-size: 18px;
+    text-align: center;
+    padding: 8px 0;
+    margin: auto;
+    border-radius: 8px;
 }
 
-.navbar, .loginbar {
+.navbar,
+.loginbar {
     display: none;
+}
+
+/******************** BANNER ********************/
+
+.banner {
+    width: 100%;
 }
 
 /******************** MAIN ********************/
@@ -64,9 +76,21 @@ main {
     margin: auto;
 }
 
+main h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 main article {
     margin-bottom: 10px;
     width: 100%;
+    background-color: white;
 }
 
 main img {
@@ -78,30 +102,46 @@ main img {
     padding: 15px;
     width: 100%;
     background-color: white;
+    position: relative;
+    margin-top: 0px;
 }
 
 main .fa-solid {
     color: limegreen;
     border: 1px solid limegreen;
-    border-radius: 25px;
+    /* border-radius: 25px;
     padding-top: 5px;
     padding-left: 5px;
     width: 40px;
-    height: 40px;
+    height: 40px; */
+    display: block;
+    border-radius: 50%;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 
-h3 {
-    font-size: 24px;
+.precioYDescuento {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 5px;
 }
 
 .precios {
     font-size: 18px;
     margin-top: 0px;
     margin-bottom: 0px;
+    max-width: 30%;
 }
 
 .descuentos {
     color: limegreen;
+    max-width: 70%;
 }
 
 .descripciones {
@@ -115,6 +155,7 @@ h3 {
 }
 
 /******************** FOOTER ********************/
+
 footer {
     background-color: #ebebeb;
     font-size: 12px;
@@ -146,11 +187,13 @@ footer p {
 }
 
 @media (min-width: 361px) {
-    .navbar, .loginbar {
+
+    .navbar,
+    .loginbar {
         display: block;
     }
 
-    header .fa-solid {
+    .hamburguer {
         display: none;
     }
 
@@ -160,15 +203,18 @@ footer p {
 
     main article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
     }
 }
 
 @media (min-width: 769px) {
-    .navbar, .loginbar {
+
+    .navbar,
+    .loginbar {
         display: block;
     }
 
-    header .fa-solid {
+    .hamburguer {
         display: none;
     }
 
@@ -178,5 +224,6 @@ footer p {
 
     main article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 22%;
     }
 }
