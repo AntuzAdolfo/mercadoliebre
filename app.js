@@ -18,6 +18,16 @@ app.get('/home', (req, res) => {
     res.sendFile(homePath);
 });
 
+const loginPath = path.join(__dirname, 'views/login.html');
+app.get('/login', (req, res) => {
+    res.sendFile(loginPath);
+});
+
+const registerPath = path.join(__dirname, 'views/register.html');
+app.get('/register', (req, res) => {
+    res.sendFile(registerPath);
+});
+
 /*Colocarlo al final para que no genere conflictos con las demás rutas*/
 app.get('*', (req, res) => {
     res.send(`
