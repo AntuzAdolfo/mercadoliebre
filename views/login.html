@@ -37,8 +37,8 @@
                 <li><a href="#">Ayuda</a></li>
             </nav>
             <nav class="loginbar">
-                <li><a href="#">Creá tu cuenta<i class="fa-regular fa-address-card"></i></a></li>
-                <li><a href="#">Ingresá<i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                <li><a href="/register">Creá tu cuenta<i class="fa-regular fa-address-card"></i></a></li>
+                <li><a href="/login">Ingresá<i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
                 <li><a href="#">Mis compras<i class="fa-solid fa-basket-shopping"></i></a></li>
             </nav>
         </ul>
@@ -46,6 +46,22 @@
     </header>
 
     <img src="images/img-home-banner.jpg" alt="home banner" class="banner">
+
+    <main>
+        <form action="" method="post">
+            <div>
+                <label for="nombre">Nombre de usuario/a</label>
+                <input type="text" name="nombre">
+            </div>
+            <div>
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="contraseña">
+            </div>
+            <div class="boton-enviar">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
 
     <footer>
         <section>

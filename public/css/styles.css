@@ -162,8 +162,8 @@ main img {
 }
 
 main .fa-solid {
-    color: limegreen;
-    border: 1px solid limegreen;
+    color: var(--color6);
+    border: 1px solid var(--color6);
     /* border-radius: 25px;
     padding-top: 5px;
     padding-left: 5px;
@@ -194,7 +194,7 @@ main .fa-solid {
 }
 
 .descuentos {
-    color: limegreen;
+    color: var(--color6);
 }
 
 .descripciones {
@@ -382,13 +382,13 @@ footer p {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
 
     header, .primario, 
     main,
     main img,
-    .banner {
-        max-width: 90vw;
+    .banner, footer {
+        max-width: 1100px;
         margin: auto;
     }
 
