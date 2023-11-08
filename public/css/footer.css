@@ -1,0 +1,58 @@
+:root {
+    --color1: #EAC926;
+    --color2: #03264C;
+    --color3: #1259c3;
+    --color4: #666;
+    --color5: #ebebeb;
+    --color6: #39b54a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #ebebeb;
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+}
+
+footer article {
+    padding: 30px 63px 0 63px;
+}
+
+footer p {
+    margin-top: 0px;
+}
+
+.titulo {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.detalle {
+    font-size: 10px;
+}
+
+.copyright {
+    text-align: left;
+    padding: 30px 0px 10px 20px;
+}
+
+/****************************************** MEDIA ******************************************/
+
+@media (min-width: 361px) {}
+
+@media (min-width: 769px) {}
+
+@media (min-width: 1100px) {
+
+    footer {
+        max-width: 1100px;
+        margin: auto;
+    }
+}
