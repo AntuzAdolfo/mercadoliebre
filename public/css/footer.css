@@ -19,7 +19,7 @@ footer {
     text-align: center;
     color: var(--color4);
 }
-footer section article i {
+footer i {
     color: var(--color3);
 }
 
@@ -59,13 +59,25 @@ footer p {
         padding: 0px 10px;
     }
 
-    footer section article i {
+    footer i {
         font-size: 16px;
         margin-bottom: 5px;
+        transition-property: color;
+        transition-duration: 0.3s;
     }
 
     .titulo {
         font-size: 12px;
+    }
+
+    .copyright {
+        font-size: 10px;
+        text-align: left;
+        padding: 30px 0px 10px 0px;
+    }
+
+    footer i:hover {
+        color: var(--color6);                
     }
 }
 
