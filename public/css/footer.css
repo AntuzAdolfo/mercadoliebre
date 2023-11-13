@@ -14,10 +14,13 @@
 }
 
 footer {
-    background-color: #ebebeb;
+    background-color: var(--color5);
     font-size: 12px;
     text-align: center;
-    color: #666;
+    color: var(--color4);
+}
+footer section article i {
+    color: var(--color3);
 }
 
 footer article {
@@ -29,8 +32,6 @@ footer p {
 }
 
 .titulo {
-    font-size: 14px;
-    font-weight: bold;
     margin-bottom: 0px;
 }
 
@@ -45,9 +46,28 @@ footer p {
 
 /****************************************** MEDIA ******************************************/
 
-@media (min-width: 361px) {}
+@media (min-width: 769px) {
+    footer section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+    }
 
-@media (min-width: 769px) {}
+    footer article {
+        padding: 0px 10px;
+    }
+
+    footer section article i {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .titulo {
+        font-size: 12px;
+    }
+}
 
 @media (min-width: 1100px) {
 
