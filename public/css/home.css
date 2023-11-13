@@ -96,7 +96,7 @@ main .fa-solid {
 
 /****************************************** MEDIA ******************************************/
 
-@media (min-width: 361px) {
+@media (min-width: 395px) {
 
     main .descripciones {
         display: block;
