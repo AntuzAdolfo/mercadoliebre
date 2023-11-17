@@ -24,6 +24,11 @@ main form {
     box-shadow: 0px 0px 10px var(--color2);
 }
 
+main form input {
+    outline: none;
+    padding-left: 10px;
+}
+
 main form div {
     width: 80%;
     padding: 10px;

@@ -29,7 +29,7 @@ app.get('*', (req, res) => {
     res.send(`
     <div>
        <h1>Esta página no existe</h1>
-       <a href="/home">Volver al Home</a>    
+       <a href="/">Volver al Home</a>    
     </div>
     `)
 })
@@ -38,4 +38,3 @@ app.listen(port, () => {
     console.log(`Servidor levantado correctamente en el puerto ${port} 
     Ir a la página: http://localhost:3000/`);
 });
-

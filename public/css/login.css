@@ -35,6 +35,8 @@ form div input {
     height: 2em;
     border-radius: 6px;
     border: none;
+    padding-left: 10px;
+    outline: none;
 }
 
 .boton-enviar {

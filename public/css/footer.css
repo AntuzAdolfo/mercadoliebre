@@ -21,6 +21,14 @@ footer {
 }
 footer i {
     color: var(--color3);
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+footer i:hover {
+    color: var(--color6);                
 }
 
 footer article {
@@ -40,7 +48,7 @@ footer p {
 }
 
 .copyright {
-    text-align: left;
+    text-align: center;
     padding: 30px 0px 10px 20px;
 }
 
@@ -59,25 +67,14 @@ footer p {
         padding: 0px 10px;
     }
 
-    footer i {
-        font-size: 16px;
-        margin-bottom: 5px;
-        transition-property: color;
-        transition-duration: 0.3s;
-    }
-
     .titulo {
         font-size: 12px;
     }
 
     .copyright {
         font-size: 10px;
-        text-align: left;
+        text-align: center;
         padding: 30px 0px 10px 0px;
-    }
-
-    footer i:hover {
-        color: var(--color6);                
     }
 }
 
