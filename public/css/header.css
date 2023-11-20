@@ -246,7 +246,7 @@ a {
     }
 }
 
-@media (min-width: 1100px) {
+/* @media (min-width: 1100px) {
 
     header,
     .top-var,
@@ -261,4 +261,4 @@ a {
     .banner {
         display: block;
     }
-}
+} */

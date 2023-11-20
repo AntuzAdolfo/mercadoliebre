@@ -66,6 +66,3 @@ main form button {
 .boton-borrar {
     background-color: var(--color5);
 }
-
-/****************************************** MEDIA ******************************************/
-@media (min-width: 1100px) {}
